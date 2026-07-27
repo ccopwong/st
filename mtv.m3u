@@ -26,7 +26,11 @@ https://s11host2.localnow.api.cms.amdvids.com/v1/manifest/c189661feba961c19bc5fb
 https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/3.m3u8
 #EXTINF:-1 tvg-id="99951197" tvg-name="Reuters" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png" group-title="新闻资讯",Reuters
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/e7493ea5-5c1c-4d7a-a3f7-e95516048ad8/3.m3u8
-#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/330px-BBC_News_2022_%28Alt%29.svg.png" group-title="新闻资讯",BBC News
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="新闻资讯",BBC News
+https://aka-live1050.delivery.roku.com/8d1f9fe3-bb9c-490b-84e7-b88c398c0623/t2-origin/out/v1/live_1080.m3u8
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="新闻资讯",BBC News
+https://gpuserver3.tier1streams.com/BBC_WORLD_NEWS/index.m3u8
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="新闻资讯",BBC News
 https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
 #EXTINF:-1 tvg-id="BBC.NEWS.HD.uk" tvg-name="BBC News UK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/330px-BBC_News_2022_%28Alt%29.svg.png" group-title="新闻资讯",BBC News UK
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
@@ -77,6 +81,16 @@ https://lightning-traceurban-samsungau.amagi.tv/playlist1080p.m3u8
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
 https://amg01131-tracetv-amg01131c1-rakuten-us-1081.playouts.now.amagi.tv/playlist/amg01131-tracetvfast-traceurban-rakutenus/playlist.m3u8
 
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
+http://206.212.244.63/117/index.m3u8
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
+http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109177
+
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
+http://40.160.24.53/MTV_LIVE/index.m3u8
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
+http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109179
+
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f4/NOW_70s_2022_logo.png",Now 70s
 https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f4/NOW_70s_2022_logo.png",Now 70s
@@ -89,7 +103,9 @@ https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/72/NOW_Rock.png",Now Rock
 https://lightning-now90s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now90s-rakuten/CDN/playlist.m3u8
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/72/NOW_Rock.png",Now 90s
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/NOW_90s_%26_00s.png",Now 90s
+https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/NOW_90s_%26_00s.png",Now 90s
 https://php.946985.filegear-sg.me/mytv265.php?id=NOW9
 
 #EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
