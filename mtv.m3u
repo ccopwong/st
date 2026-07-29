@@ -13,7 +13,9 @@ https://cdn3.indevs.in/stream/tvb/fct4k/
 #EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K超清",翡翠台4K
 http://rihou.cc:555/tv/[Pd]无线翡4K
 
-#EXTINF:-1 tvg-id="CNN.HD.us2" tvg-name="CNN US" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN US
+#EXTINF:-1 tvg-id="CNN.HD.us2" tvg-name="CNN US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/cnn-us.png" group-title="新闻资讯",CNN US
+http://45.139.122.199:2095/Pm2e5NEugM/ngORTY5fvp/2116090
+#EXTINF:-1 tvg-id="CNN.HD.us2" tvg-name="CNN US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/cnn-us.png" group-title="新闻资讯",CNN US
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://ds2c506obo7m8.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/eff167d7-fa70-46a6-a123-3408de90641d/0.m3u8
