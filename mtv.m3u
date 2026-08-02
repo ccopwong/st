@@ -1,21 +1,18 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz,https://epg.yang-1989.eu.org/epg.xml.gz,http://epg.51zmt.top:8000/e.xml.gz"
 
-#EXTINF:-1 tvg-id="Love.Nature.ca2" tvg-name="Love Nature 4K CA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Love_Nature_logo_%282025%29.svg/500px-Love_Nature_logo_%282025%29.svg.png" group-title="4K超清",Love Nature 4K CA
-http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/119322
-#EXTINF:-1 tvg-id="USBA3400003IP" tvg-name="Love Nature 4K" tvg-logo="https://garysclub.sharewithyou.dpdns.org/logos/Love_Nature.png" group-title="4K UHD",Love Nature 4K
 
+#EXTINF:-1 tvg-id="USBA3400003IP" tvg-name="Love Nature 4K" tvg-logo="https://garysclub.sharewithyou.dpdns.org/logos/Love_Nature.png" group-title="4K UHD",Love Nature 4K
 https://pb-ehs1glsha1juy.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ehs1glsha1juy/f2141f37-1f48-475b-ba54-b9efb62346db/0.m3u8
 
-#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K超清",翡翠台4K
-https://cdn.qd.je/163189/fct4k
-#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K超清",翡翠台4K
-https://cdn3.indevs.in/stream/tvb/fct4k/
-#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K超清",翡翠台4K
-http://rihou.cc:555/tv/[Pd]无线翡4K
 
-#EXTINF:-1 tvg-id="CNN.HD.us2" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
-https://jmp2.uk/stvp-GBBD8000016N
-#EXTINF:-1 tvg-id="CNN.HD.us2" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
+#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K UHD",翡翠台4K
+https://cdn3.indevs.in/stream/tvb/fct4k/
+
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
+https://cdn3.indevs.in/stream/tvb/fct/
+
+
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-DEBD800001S4
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://ds2c506obo7m8.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/eff167d7-fa70-46a6-a123-3408de90641d/0.m3u8
@@ -27,12 +24,10 @@ https://jmp2.uk/stvp-ATBD190000101
 https://jmp2.uk/stvp-CHBD1900001JB
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://jmp2.uk/stvp-DEBD19000012M
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
-https://jmp2.uk/stvp-ESBD190000137
+
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://jmp2.uk/stvp-FRBD190001055
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
-https://jmp2.uk/stvp-ITBD19000097D
+
 
 #EXTINF:-1 tvg-id="ABC.News.Live.us2" tvg-name="ABC News Live" tvg-logo="https://d3bd0tgyk368z1.cloudfront.net/feeds/images/ABCNewsLive/abc_logo_new.png" group-title="新闻资讯",ABC News Live
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/59d7ff97-2217-4d3d-a0c9-7f7e6d8dae8e/5.m3u8
@@ -42,12 +37,10 @@ https://s11host2.localnow.api.cms.amdvids.com/v1/manifest/c189661feba961c19bc5fb
 https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/3.m3u8
 #EXTINF:-1 tvg-id="99951197" tvg-name="Reuters" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png" group-title="新闻资讯",Reuters
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/e7493ea5-5c1c-4d7a-a3f7-e95516048ad8/3.m3u8
-#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="新闻资讯",BBC News
-https://aka-live1050.delivery.roku.com/8d1f9fe3-bb9c-490b-84e7-b88c398c0623/t2-origin/out/v1/live_1080.m3u8
+
 #EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="新闻资讯",BBC News
 https://gpuserver3.tier1streams.com/BBC_WORLD_NEWS/index.m3u8
-#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="新闻资讯",BBC News
-https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
+
 #EXTINF:-1 tvg-id="BBC.NEWS.HD.uk" tvg-name="BBC News UK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/330px-BBC_News_2022_%28Alt%29.svg.png" group-title="新闻资讯",BBC News UK
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="Sky.News.HD.uk" tvg-name="Sky News International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/sky-news-uk.png?raw=true" group-title="新闻资讯",Sky News International
@@ -60,30 +53,17 @@ http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3
 http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
 #EXTINF:-1 group-title="新闻资讯" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/channelnewsasia.png",CNA News
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_3.m3u8
-#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
-https://cdn.qd.je/163189/wxxw
-#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
-https://cdn.qd.je/163189/wxxwt
+
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
 https://iptv.aibo.lol/qd/wxxw.m3u8
-#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
-http://rihou.cc:555/tv/[Pd]无线新闻
 
-#EXTINF:-1 tvg-name="Now新聞台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/now1.png" group-title="新闻资讯",NOW新闻台
-https://cdn.qd.je/163189/now
+
 #EXTINF:-1 tvg-name="Now新聞台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/now1.png" group-title="新闻资讯",NOW新闻台
 https://iptv.aibo.lol/qd/now.m3u8
 
-#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="新闻资讯",HOY TV
-https://cdn.qd.je/163189/hoy
-#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="新闻资讯",HOY TV
-https://cdn.qd.je/163189/hoy2
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="新闻资讯",凤凰资讯
-https://cdn.qd.je/163189/fhzx
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="新闻资讯",凤凰资讯
 https://iptv.aibo.lol/qd/fhzx.m3u8
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="新闻资讯",凤凰资讯
-https://iptv.aibo.lol/proxy/aHR0cHM6Ly9pcHR2Ljg1Mjg1MS54eXovbC9lRjhaSGpoQmt0UzgybnZSTUJ3cTQtYmxJTDh6UU9qVTRPYkFoZFNpMkF4ejZQNG9Sczg3RFBNTUdTdkpkQm9fL2luZGV4Lm0zdTg
+
 
 #EXTINF:-1 tvg-id="99991247" tvg-name="NBC News NOW" tvg-logo="https://image-resizer-cloud-cdn.api.cms.amdvids.com/image/14F5D3B6-FA2C-4E41-91AD-CD037209D874/3-1x1.png" group-title="新闻资讯",NBC News NOW
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/3e088b25-3e79-4f34-bbdf-afbcd40497f3/4.m3u8
@@ -97,27 +77,12 @@ https://amg01131-tracetv-traceurbanuk-samsunguk-6r213.amagi.tv/ts-eu-w1-n2/playl
 https://lightning-traceurban-samsungau.amagi.tv/playlist1080p.m3u8
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
 https://amg01131-tracetv-amg01131c1-rakuten-us-1081.playouts.now.amagi.tv/playlist/amg01131-tracetvfast-traceurban-rakutenus/playlist.m3u8
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
-https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
-https://epg.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
-https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
+
 
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyG8ZVNr1DwmPqX-rieN2-iNAPgeGb82RwLZ9__Nolpg&s=10",Trace UK
 https://epg.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-66be8cd4871131188099527e/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyG8ZVNr1DwmPqX-rieN2-iNAPgeGb82RwLZ9__Nolpg&s=10",Trace UK
 https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-66be8cd4871131188099527e/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
-
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
-http://206.212.244.63/117/index.m3u8
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
-http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109177
-
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
-http://40.160.24.53/MTV_LIVE/index.m3u8
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
-http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109179
 
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f4/NOW_70s_2022_logo.png",Now 70s
 https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
@@ -150,13 +115,70 @@ https://jmp2.uk/stvp-USBD3300004RH
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
 https://jmp2.uk/stvp-DEBA2200007V6
 
-#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
+#EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
+http://206.212.244.63/117/index.m3u8
+#EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
+http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109177
+
+#EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
+http://40.160.24.53/MTV_LIVE/index.m3u8
+#EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
+http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109179
+
+#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="CA",翡翠台4K
+https://cdn.qd.je/163189/fct4k
+
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="CA",翡翠台
 https://cdn.qd.je/163189/fct
-#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="CA",翡翠台
 https://cdn.qd.je/163189/fct2
-#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
-https://cdn3.indevs.in/stream/tvb/fct/
-#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB2.png" group-title="mytv",明珠台
+
+#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB2.png" group-title="CA",明珠台
 https://cdn.qd.je/163189/mzt
-#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB2.png" group-title="mytv",明珠台
+#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB2.png" group-title="CA",明珠台
 https://cdn.qd.je/163189/mztvtt
+
+#EXTINF:-1 tvg-id="Love.Nature.ca2" tvg-name="Love Nature 4K CA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Love_Nature_logo_%282025%29.svg/500px-Love_Nature_logo_%282025%29.svg.png" group-title="CA",Love Nature 4K CA
+http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/119322
+
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="CA",CNN
+https://jmp2.uk/stvp-GBBD8000016N
+
+#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CA",CNN International
+https://jmp2.uk/stvp-ESBD190000137
+
+#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CA",CNN International
+https://jmp2.uk/stvp-ITBD19000097D
+
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
+https://aka-live1050.delivery.roku.com/8d1f9fe3-bb9c-490b-84e7-b88c398c0623/t2-origin/out/v1/live_1080.m3u8
+
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
+https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
+
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="CA",凤凰资讯
+https://iptv.aibo.lol/proxy/aHR0cHM6Ly9pcHR2Ljg1Mjg1MS54eXovbC9lRjhaSGpoQmt0UzgybnZSTUJ3cTQtYmxJTDh6UU9qVTRPYkFoZFNpMkF4ejZQNG9Sczg3RFBNTUdTdkpkQm9fL2luZGV4Lm0zdTg
+
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="CA",凤凰资讯
+https://cdn.qd.je/163189/fhzx
+
+
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="CA",无线新闻台
+https://cdn.qd.je/163189/wxxw
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="CA",无线新闻台
+https://cdn.qd.je/163189/wxxwt
+
+#EXTINF:-1 tvg-name="Now新聞台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/now1.png" group-title="CA",NOW新闻台
+https://cdn.qd.je/163189/now
+
+#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="CA",HOY TV
+https://cdn.qd.je/163189/hoy
+#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="CA",HOY TV
+https://cdn.qd.je/163189/hoy2
+
+#EXTINF:-1 group-title="CA" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
+https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
+#EXTINF:-1 group-title="CA" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
+https://epg.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
+#EXTINF:-1 group-title="CA" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
+https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
