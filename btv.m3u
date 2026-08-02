@@ -1,48 +1,20 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz,https://epg.yang-1989.eu.org/epg.xml.gz,http://epg.51zmt.top:8000/e.xml.gz"
 
 
-#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K超清",翡翠台4K
-https://cdn.qd.je/163189/fct4k
-#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K超清",翡翠台4K
+#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K UHD",翡翠台4K
 https://cdn3.indevs.in/stream/tvb/fct4k/
-#EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="4K超清",翡翠台4K
-http://rihou.cc:555/tv/[Pd]无线翡4K
 
-#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
-https://cdn.qd.je/163189/wxxw
-#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
-https://cdn.qd.je/163189/wxxwt
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
+https://cdn3.indevs.in/stream/tvb/fct/
+
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
 https://iptv.aibo.lol/qd/wxxw.m3u8
-#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
-http://rihou.cc:555/tv/[Pd]无线新闻
 
-#EXTINF:-1 tvg-name="Now新聞台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/now1.png" group-title="新闻资讯",NOW新闻台
-https://cdn.qd.je/163189/now
 #EXTINF:-1 tvg-name="Now新聞台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/now1.png" group-title="新闻资讯",NOW新闻台
 https://iptv.aibo.lol/qd/now.m3u8
 
-#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="新闻资讯",HOY TV
-https://cdn.qd.je/163189/hoy
-#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="新闻资讯",HOY TV
-https://cdn.qd.je/163189/hoy2
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="新闻资讯",凤凰资讯
-https://cdn.qd.je/163189/fhzx
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="新闻资讯",凤凰资讯
 https://iptv.aibo.lol/qd/fhzx.m3u8
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="新闻资讯",凤凰资讯
-https://iptv.aibo.lol/proxy/aHR0cHM6Ly9pcHR2Ljg1Mjg1MS54eXovbC9lRjhaSGpoQmt0UzgybnZSTUJ3cTQtYmxJTDh6UU9qVTRPYkFoZFNpMkF4ejZQNG9Sczg3RFBNTUdTdkpkQm9fL2luZGV4Lm0zdTg
-
-#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
-https://cdn.qd.je/163189/fct
-#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
-https://cdn.qd.je/163189/fct2
-#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="mytv",翡翠台
-https://cdn3.indevs.in/stream/tvb/fct/
-#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB2.png" group-title="mytv",明珠台
-https://cdn.qd.je/163189/mzt
-#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB2.png" group-title="mytv",明珠台
-https://cdn.qd.je/163189/mztvtt
 
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
 https://amg01131-tracetv-traceurbanuk-samsunguk-6r213.amagi.tv/ts-eu-w1-n2/playlist/amg01131-tracetv-traceurbanuk-samsunguk/cb543e1f796c648e9dd43c66cef340a1f9431fde1d6988693eb5518975d10724d4efa89da914ac30578f6680255f314120369809a11f11afce7ba83e357978738388c33b99c5476ee78a74736eac7f1d56e00d13c03d285aedc43644c531bc720053cf0c6d5d3dc4fd2af5340d98d5158a7b2a95adc361277d4a3cce0b0ca7f941a6fce64346de7eb5e41f49c12c17b6d45f9cd449bf9dd55ac8439b7ea41dcb8fa18d861481d39435a957b5365328481498846addca52a6ca9b1b5af610781c6d3f81a297ed00388f4331349299d08f56d637d3d35deb0736bf13d64b8a24f806c062bcd56f928a9eeb6d710db99e1b0b49a1e1b3c4fa25238262f4afe8d47d0ef79c786366f95de7060415b1d4e509debf7ffab72796fa680d28ff9f449698c0ef85da966bac15f5e9d5b5185f141d6e6f8759b1d479d816ce6cbac71d262e202ec68161e7b9ea6a024b61a19d6ce57968d169638ca56c13e1227272e76ede1b2e63c2331e138f4fd8a94ca70dbb68ff511ce85134fa22b6d87eb0cf538277fc3df689ddde39cfccf58ebab65387007948ddd33f56440355dfe061321b76cd42de02ab8b62240ff6fec1f2c11c6d4969571a218ae1ee7e8f81d3214656e85d326578503a97079646ec4071407f992182f93623cc46003df6ab3a6a5f6ebdc1a5ced2859d0ae6299387d6111b16752ffd3f0c2d6b9391885af637023e595592006946f2560e11a4c587b5d7d02efd9d62ab2a6b5b3696a759125f201c096eb4a328ef2c85c24d86ca9f639b95ca7823a233ac061c9ba2b94de8fd8dc23562b3a245166a92936a855c1e872f964cacd763d3a45a16165e141c22efb7388f13b96d9993273b68469d64fb51966929e9fc/44/1920x1080_5288800/index.m3u8
@@ -51,15 +23,11 @@ https://lightning-traceurban-samsungau.amagi.tv/playlist1080p.m3u8
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
 https://amg01131-tracetv-amg01131c1-rakuten-us-1081.playouts.now.amagi.tv/playlist/amg01131-tracetvfast-traceurban-rakutenus/playlist.m3u8
 
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
-http://206.212.244.63/117/index.m3u8
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
-http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109177
 
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
-http://40.160.24.53/MTV_LIVE/index.m3u8
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
-http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109179
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyG8ZVNr1DwmPqX-rieN2-iNAPgeGb82RwLZ9__Nolpg&s=10",Trace UK
+https://epg.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-66be8cd4871131188099527e/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyG8ZVNr1DwmPqX-rieN2-iNAPgeGb82RwLZ9__Nolpg&s=10",Trace UK
+https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-66be8cd4871131188099527e/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
 
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f4/NOW_70s_2022_logo.png",Now 70s
 https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
@@ -73,9 +41,24 @@ https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/72/NOW_Rock.png",Now Rock
 https://lightning-now90s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now90s-rakuten/CDN/playlist.m3u8
+
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/NOW_90s_%26_00s.png",Now 90s
 https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/NOW_90s_%26_00s.png",Now 90s
 https://php.946985.filegear-sg.me/mytv265.php?id=NOW9
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/NOW_90s_%26_00s.png",Now 90s
+https://amg01076-amg01076c19-lg-gb-10326.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01076-lightning-now90s00s-lggb/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]
+
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
+https://xite-hitsuk-lg.amagi.tv/hls/amagi_hls_data_xiteAAAAA-xite-hitsuk-lg/CDN/master.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
+https://jmp2.uk/stvp-CABD1200038NZ
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
+https://jmp2.uk/stvp-GBBB3800005QO
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
+https://jmp2.uk/stvp-USBD3300004RH
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
+https://jmp2.uk/stvp-DEBA2200007V6
+
 
 
