@@ -366,6 +366,8 @@ rules:
   - DOMAIN,play-edge.itunes.apple.com,TV
   - DOMAIN,linear.tv.apple.com,TV
   - DOMAIN-SUFFIX,akamaized.net,TV
+  - DOMAIN-SUFFIX,plex.tv,TV
+  - DOMAIN-SUFFIX,pluto.tv,TV
 
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block  
