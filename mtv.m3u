@@ -67,8 +67,7 @@ https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043
 #EXTINF:-1 tvg-id="99951387" tvg-name="CNN Originals" tvg-logo="https://m.media-amazon.com/images/G/01/LCXO_Station_Logos/CNNOriginals_1920x1080_Logo._SL500_FMpng_.png" group-title="新闻资讯",CNN Originals
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/3836c9f5-9b7c-4254-90fd-4c8bcfca7f8f/3.m3u8
 
-#EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
-http://40.160.24.53/MTV_CLASSIC/index.m3u8
+
 
 
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
@@ -119,6 +118,8 @@ https://jmp2.uk/stvp-DEBA2200007V6
 
 #EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
 http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109177
+#EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
+http://40.160.24.53/MTV_CLASSIC/index.m3u8
 
 #EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-live-us.png",MTV live
 http://40.160.24.53/MTV_LIVE/index.m3u8
