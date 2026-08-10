@@ -14,7 +14,7 @@ https://cdn3.indevs.in/stream/tvb/fct/
 
 #EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-DEBD800001S4
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://ds2c506obo7m8.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/eff167d7-fa70-46a6-a123-3408de90641d/0.m3u8
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://jmp2.uk/stvp-GBBD1900008O3
@@ -24,7 +24,6 @@ https://jmp2.uk/stvp-ATBD190000101
 https://jmp2.uk/stvp-CHBD1900001JB
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://jmp2.uk/stvp-DEBD19000012M
-
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://jmp2.uk/stvp-FRBD190001055
 
@@ -38,8 +37,6 @@ https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/3.m3u8
 #EXTINF:-1 tvg-id="99951197" tvg-name="Reuters" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png" group-title="新闻资讯",Reuters
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/e7493ea5-5c1c-4d7a-a3f7-e95516048ad8/3.m3u8
 
-#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="新闻资讯",BBC News
-https://gpuserver3.tier1streams.com/BBC_WORLD_NEWS/index.m3u8
 
 #EXTINF:-1 tvg-id="BBC.NEWS.HD.uk" tvg-name="BBC News UK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/330px-BBC_News_2022_%28Alt%29.svg.png" group-title="新闻资讯",BBC News UK
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
@@ -107,16 +104,16 @@ https://amg01076-amg01076c19-lg-gb-10326.playouts.now.amagi.tv/ts-eu-w1-n2/playl
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
 https://xite-hitsuk-lg.amagi.tv/hls/amagi_hls_data_xiteAAAAA-xite-hitsuk-lg/CDN/master.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
-https://jmp2.uk/stvp-CABD1200038NZ
-#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
 https://jmp2.uk/stvp-GBBB3800005QO
+
+#EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
+https://jmp2.uk/stvp-CABD1200038NZ
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
 https://jmp2.uk/stvp-USBD3300004RH
 #EXTINF:-1 group-title="音乐艺术" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMFqaHv8MhevXwekKn-PUhcI3WevgRLfvbA1mtm3EYNUFezNdNhSUPvg&s=10",XITE Hits
 https://jmp2.uk/stvp-DEBA2200007V6
 
-#EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
-http://206.212.244.63/117/index.m3u8
+
 #EXTINF:-1 group-title="CA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/mtv-classic-us.png",MTV classic
 http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/109177
 
