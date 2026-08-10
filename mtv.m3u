@@ -148,13 +148,7 @@ https://jmp2.uk/stvp-ESBD190000137
 https://jmp2.uk/stvp-ITBD19000097D
 
 #EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
-https://aka-live1050.delivery.roku.com/8d1f9fe3-bb9c-490b-84e7-b88c398c0623/t2-origin/out/v1/live_1080.m3u8
-
-#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
 https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
-
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="CA",凤凰资讯
-https://iptv.aibo.lol/proxy/aHR0cHM6Ly9pcHR2Ljg1Mjg1MS54eXovbC9lRjhaSGpoQmt0UzgybnZSTUJ3cTQtYmxJTDh6UU9qVTRPYkFoZFNpMkF4ejZQNG9Sczg3RFBNTUdTdkpkQm9fL2luZGV4Lm0zdTg
 
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="CA",凤凰资讯
 https://cdn.qd.je/163189/fhzx
@@ -173,9 +167,3 @@ https://cdn.qd.je/163189/hoy
 #EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="CA",HOY TV
 https://cdn.qd.je/163189/hoy2
 
-#EXTINF:-1 group-title="CA" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
-https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
-#EXTINF:-1 group-title="CA" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
-https://epg.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
-#EXTINF:-1 group-title="CA" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TraceUrban.png",Trace Urban HD
-https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-6322658be67cf9cd9011fcda/?X-Plex-Token=yWfArxc-c5bQDxTWaUYV
