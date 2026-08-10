@@ -12,19 +12,19 @@ https://cdn3.indevs.in/stream/tvb/fct4k/
 https://cdn3.indevs.in/stream/tvb/fct/
 
 
-#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
+#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://jmp2.uk/stvp-DEBD800001S4
-#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
+#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://ds2c506obo7m8.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/eff167d7-fa70-46a6-a123-3408de90641d/0.m3u8
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-GBBD1900008O3
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-ATBD190000101
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-CHBD1900001JB
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-DEBD19000012M
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-FRBD190001055
 
 
@@ -138,13 +138,13 @@ https://cdn.qd.je/163189/mztvtt
 #EXTINF:-1 tvg-id="Love.Nature.ca2" tvg-name="Love Nature 4K CA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Love_Nature_logo_%282025%29.svg/500px-Love_Nature_logo_%282025%29.svg.png" group-title="CA",Love Nature 4K CA
 http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/119322
 
-#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="CA",CNN
+#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CA",CNN International
 https://jmp2.uk/stvp-GBBD8000016N
 
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CA",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-ESBD190000137
 
-#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CA",CNN International
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-ITBD19000097D
 
 #EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
