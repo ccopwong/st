@@ -1,0 +1,948 @@
+# ========================
+# Clash-ALL 优化配置
+# ========================
+
+# 机场节点订阅
+
+proxy-providers:
+
+  机场名称:
+
+    url: "http://38.175.196.72:5888/s/11f52d8fe2a5c3549d582d6392b2288f"  
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
+
+  机场名称2:
+
+    url: "https://api3.nimenshishangdi.cc/dazhutou/48d5c2a3bb72c88596784077ce600c24"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
+
+
+proxies:
+  - name: Limberg-hysteria2-46514
+    type: hysteria2
+    server: gary01.1688848.xyz
+    port: 46514
+    password: ONmAzcPKwC
+    alpn:
+      - h3
+    sni: www.bing.com
+    tls: true
+    skip-cert-verify: true
+  - name: Gary02-hysteria2-39388
+    type: hysteria2
+    server: gary02.1688848.xyz
+    port: 39388
+    password: nCKwZIFgBH
+    alpn:
+      - h3
+    sni: www.bing.com
+    tls: true
+    skip-cert-verify: true
+  - {name: 直连, type: direct}
+  - {name: 拒绝, type: reject}
+
+# ========================
+# 主要端口设置
+# ========================
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+
+allow-lan: true
+mode: rule
+log-level: info
+
+external-controller: 0.0.0.0:9090
+# external-ui: ui
+# external-ui-name: zashboard
+# external-ui-url: https://gh-proxy.com/github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+secret: "123456"
+
+# ========================
+# DNS 设置
+# ========================
+dns:
+  enable: true
+  listen: 0.0.0.0:7874
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.20.0.1/16
+  nameserver:
+    - 223.5.5.5
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - +.lan
+    - +.local
+    - geosite:cn
+# 快猫    
+    - +.km688.ink
+# 火烧 
+    - +.onesubv.site
+    - +.oneyyds.online
+    - +.fengyyds.site
+    - +.onemg.top    
+# 猫耳 
+    - +.chybinc.com
+# BestVPN 
+    - +.invitevp.com
+    - +.vp2.us
+# 小牛
+    - +.xiaoniuyun.cc  
+# 硅谷
+    - +.apple-bing.sbs  
+# 无界
+    - +.bncrcloud.com
+# 冰云
+    - +.xby01.xyz
+# 牛逼   
+    - +.idsduf.com  
+    - +.66jc.top
+# 极速通        
+    - +.gfw.gg
+# 萌狗       
+    - +.moedog.cloud
+
+# 其他     
+    - +.ynhtbank.com
+    - +.qeayr.cn
+    - +.saojc.xyz   
+    - +.sssyun.xyz
+    - +.dler.cloud
+    - +.0tk8a3a1q4t94dler.com    
+    - +.aerianas.top
+    - +.gptacg.top
+    - +.wxda.net
+
+ipv6: false
+
+# ========================
+# TUN 模块
+# ========================
+tun:
+  enable: true
+  stack: gvisor
+  device: utun
+  endpoint-independent-nat: true
+  auto-route: false
+  auto-detect-interface: false
+  auto-redirect: false
+  strict-route: false
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# ========================
+# 策略组定义
+# ========================
+default: &default
+  type: select
+  proxies:
+    - 直连
+    - 所有-智选
+    - 所有-手选
+    - 香港-智选
+    - 香港-故转
+    - 台湾-故转
+    - 日本-故转
+    - 新加坡-故转
+    - 韩国-故转
+    - 美国-故转
+    - 英国-故转
+    - 其他-故转
+    - 拒绝
+
+proxy-groups:
+
+  - name: 🎬 流媒
+    type: select
+    proxies:
+      - Limberg-hysteria2-46514
+      - Gary02-hysteria2-39388
+      - 直连
+      - 所有-智选
+      - 所有-手选
+      - 香港-智选
+      - 香港-故转
+      - 台湾-故转
+      - 日本-故转
+      - 新加坡-故转
+      - 韩国-故转
+      - 美国-故转
+      - 英国-故转
+      - 其他-故转
+      - 拒绝
+  - {name: 📺 TV, <<: *default}
+  - {name: CTV, <<: *default}
+
+  # 业务分流组
+
+  - {name: ChatGPT, <<: *default}
+  - {name: Gemini, <<: *default}
+  - {name: Copilot, <<: *default}
+  - {name: Perplexity, <<: *default}
+  - {name: Claude, <<: *default}
+  - {name: Meta AI, <<: *default}
+  - {name: GitHub, <<: *default}
+  - {name: Reddit, <<: *default}
+  - {name: Telegram, <<: *default}
+  - {name: WhatsApp, <<: *default}
+  - {name: Facebook, <<: *default}
+  - {name: YouTube, <<: *default}
+  - {name: TikTok, <<: *default}
+  - {name: Netflix, <<: *default}
+  - {name: HBO, <<: *default}
+  - {name: Disney, <<: *default}
+  - {name: Amazon, <<: *default}
+  - {name: Crunchyroll, <<: *default}
+  - {name: Spotify, <<: *default}
+  - {name: Nvidia, <<: *default}
+  - {name: Steam, <<: *default}
+  - {name: Games, <<: *default}
+  - {name: Crypto, <<: *default}
+  - {name: Apple, <<: *default}
+  - {name: Google, <<: *default}
+  - {name: Microsoft, <<: *default}
+  - {name: Test, <<: *default}
+  - {name: Block, <<: *default}
+  - {name: 国外, <<: *default}
+  - {name: 国内, <<: *default}
+  - {name: 其他, <<: *default}
+
+  # 所有组
+
+  - name: 所有-手选
+    type: select
+    include-all: true
+    filter: "^((?!(直连|拒绝)).)*$"
+
+  - name: 所有-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "^((?!(直连|拒绝)).)*$"
+
+  # 香港组
+
+  - name: 香港-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 香港-手选
+      - 香港-智选
+  
+  - name: 香港-手选
+    type: select
+    include-all: true
+    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
+    
+  - name: 香港-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
+ 
+  # 台湾组
+
+  - name: 台湾-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 台湾-手选
+      - 台湾-智选
+  - name: 台湾-手选
+    type: select
+    include-all: true
+    filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
+  - name: 台湾-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
+
+  # 日本组
+
+  - name: 日本-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 日本-手选
+      - 日本-智选
+  - name: 日本-手选
+    type: select
+    include-all: true
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+  - name: 日本-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
+
+  # 新加坡组
+
+  - name: 新加坡-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 新加坡-手选
+      - 新加坡-智选
+  - name: 新加坡-手选
+    type: select
+    include-all: true
+    filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
+  - name: 新加坡-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
+
+  # 韩国组
+
+  - name: 韩国-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 韩国-手选
+      - 韩国-智选
+  - name: 韩国-手选
+    type: select
+    include-all: true
+    filter: "(?=.*(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea)).*$"
+  - name: 韩国-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "(?=.*(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea)).*$"
+
+  # 美国组
+
+  - name: 美国-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 美国-手选
+      - 美国-智选
+  - name: 美国-手选
+    type: select
+    include-all: true
+    filter: "(?=.*(广美|US|美国|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
+  - name: 美国-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "(?=.*(广美|US|美国|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
+
+  # 英国组
+
+  - name: 英国-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 英国-手选
+      - 英国-智选
+  - name: 英国-手选
+    type: select
+    include-all: true
+    filter: "(?=.*(英国|英|伦敦|UK|United Kingdom|🇬🇧|London)).*$"
+  - name: 英国-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "(?=.*(英国|英|伦敦|UK|United Kingdom|🇬🇧|London)).*$"
+
+  # 其他组
+  
+  - name: 其他-故转
+    type: fallback
+    interval: 300
+    lazy: false
+    proxies:
+      - 其他-手选
+      - 其他-智选
+  - name: 其他-手选
+    type: select
+    include-all: true
+    filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea|广美|US|美国|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States|英国|UK|United Kingdom|伦敦|英|London|🇬🇧)).)*$"
+  - name: 其他-智选
+    type: url-test
+    include-all: true
+    interval: 300
+    filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea|广美|US|美国|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States|英国|UK|United Kingdom|伦敦|英|London|🇬🇧)).)*$"
+
+# ========================
+# 规则引擎（rules）
+# ========================
+rules:
+
+  # TV 与流媒体规则（最高优先级）
+  - DOMAIN-SUFFIX,0b73ace69ebb45eaa249bb87837cb958.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,18f2fbf906cb473e8adbe37026e7e27f.mediatailor.us-east-1.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,1d7f286dfb844497ac68dd9d6eeb6ea6.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,3003219.arclivon.cc,🎬 流媒
+  - DOMAIN-SUFFIX,3003219.calovrix.cc,🎬 流媒
+  - DOMAIN-SUFFIX,3003219.linovrex.cc,🎬 流媒
+  - DOMAIN-SUFFIX,3003219.quanviro.cc,🎬 流媒
+  - DOMAIN-SUFFIX,3003219.seravixx.cc,🎬 流媒
+  - DOMAIN-SUFFIX,3003219.xenovrix.cc,🎬 流媒
+  - DOMAIN-SUFFIX,3fbf38fe.wurl.com,🎬 流媒
+  - DOMAIN-SUFFIX,52aad07d9d4f4d479d9b27e08ddf9e8b.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,75943f25.wurl.com,🎬 流媒
+  - DOMAIN-SUFFIX,89514e758f814907be6d14bbc0aa66b7.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,8a4805800dac428ebbf1d3cde0cdcf87.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,926e3f43.wurl.com,🎬 流媒
+  - DOMAIN-SUFFIX,967d9da6.wurl.com,🎬 流媒
+  - DOMAIN-SUFFIX,99f62fea411048679ce5e233e88f2b95.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,9d3b46a9.wurl.com,🎬 流媒
+  - DOMAIN-SUFFIX,9f8e2ffcd87f4c469be7194e48f84874.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,a.jsrdn.com,🎬 流媒
+  - DOMAIN-SUFFIX,abc-iview-mediapackagestreams-2.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,aenetworks.global.transmit.live,🎬 流媒
+  - DOMAIN-SUFFIX,aka-live1050.delivery.roku.com,🎬 流媒
+  - DOMAIN-SUFFIX,amc-amcpresents-1-us.xumo.wurl.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amc-rushbyamc-1-us.vizio.wurl.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amd-mediator-eolq3tk4la-uk.a.run.app,🎬 流媒
+  - DOMAIN-SUFFIX,amg00089-bellmedia-amg00089c16-lg-ca-9432.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00089-bellmedia-amg00089c17-lg-ca-9431.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00106-france24-france24-samsunguk-qvpp8.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00136-amg00136c18-amgplt0020.playout.now3.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00136-wbd-amg00136c10-lg-us-1934.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00136-wbd-amg00136c14-lg-us-1937.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00136-wbd-amg00136c16-xumo-us-6502.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00136-wbd-amg00136c41-lg-us-3570.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00136-wbd-amg00136c83-lg-us-9807.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00136-wbd-amg00136c9-lg-us-1935.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00163-amg00163c15-xumo-us-7487.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00170-amg00170c1-xumo-us-5462.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00222-amg00222c4-amgplt0002.playout.now3.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00276-amg00276c21-samsung-gb-5270.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00353-amg00353c55-amgplt0023.playout.now3.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00353-lionsgatestudio-hersphere-lgus-3vv9h.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00375-amg00375c7-xumo-us-10111.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00451-dazn-daznringside-lgus-2f6xc.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00793-amg00793c39-vidaa-gb-7932.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00793-amg00793c42-vidaa-gb-7814.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01076-amg01076c1-samsung-gb-6682.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01076-amg01076c1-samsung-in-7053.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01076-amg01076c19-samsung-gb-6683.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01076-amg01076c19-samsung-in-7054.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01076-amg01076c2-samsung-in-7056.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01076-amg01076c3-samsung-in-7063.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01076-lightningintern-gbnews-samsunguk-0lu52.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01131-tracetv-amg01131c5-rlaxx-us-6616.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01131-tracetv-tracelatinaes-samsungspain-d7byg.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01131-tracetv-traceurbanuk-samsunguk-6r213.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01269-willowtv-amg01269c1-xumo-us-5206.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01314-amg01314c8-distrotv-us-10218.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01442-pelmorexcorp-theweathernetwork-lgca-f0v2i.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01448-samsungin-ndtv24x7-samsungin-ad.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01515-amg01515c43-samsung-gb-9038.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01597-wnetnewyorkpubl-pbsnature-xumo-8xorq.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01753-narrativeentert-greatchristmas-samsunguk-8atls.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01753-narrativeentert-greatmovies-samsunguk-7z6eh.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg01918-cnnus-amg01918c2-xumo-us-6436.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg02333-pbs-amg02333c10-lg-gb-3238.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg02333-pbs-amg02333c3-lg-gb-1988.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg02333-pbs-amg02333c6-lg-us-3175.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,amg16186-amg16186c1-amgplt0055.playout.now3.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,analytics.global.sky.com,🎬 流媒
+  - DOMAIN-SUFFIX,assets.adobedtm.com,🎬 流媒
+  - DOMAIN-SUFFIX,assets.golfchannel.com,🎬 流媒
+  - DOMAIN-SUFFIX,assets.sky.com,🎬 流媒
+  - DOMAIN-SUFFIX,atlanticflixtv.online,🎬 流媒
+  - DOMAIN-SUFFIX,b9f2b36f.wurl.com,🎬 流媒
+  - DOMAIN-SUFFIX,bbb-billi-xumo.otteravision.com,🎬 流媒
+  - DOMAIN-SUFFIX,bbb-bowl-xumo.otteravision.com,🎬 流媒
+  - DOMAIN-SUFFIX,bgdc.live,🎬 流媒
+  - DOMAIN-SUFFIX,boutique.orange.fr,🎬 流媒
+  - DOMAIN-SUFFIX,business.sky.com,🎬 流媒
+  - DOMAIN-SUFFIX,c.mjh.nz,🎬 流媒
+  - DOMAIN-SUFFIX,ca1.rocketdns.info,🎬 流媒
+  - DOMAIN-SUFFIX,cdn.freebiesupply.com,🎬 流媒
+  - DOMAIN-SUFFIX,cdn.mos.cms.futurecdn.net,🎬 流媒
+  - DOMAIN-SUFFIX,cdn.optimizely.com,🎬 流媒
+  - DOMAIN-SUFFIX,cdn.privacy-mgmt.com,🎬 流媒
+  - DOMAIN-SUFFIX,cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv,🎬 流媒
+  - DOMAIN-SUFFIX,citynewsregional.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,creativecommons.org,🎬 流媒
+  - DOMAIN-SUFFIX,d11r33s5i066xh.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d171yrj5ba7twq.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d198ro05q94rc4.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d19t74em32v5mc.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1ak5jijks54h1.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1b65xiaowu9wd.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1biytugnv36sr.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1d726ny1vain2.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1dagx0hs2fkxs.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1e9r0b71zfwk7.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1em2hga7sgumq.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1ieuq3tbxyiyt.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1kqz1q7knpsue.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1kx9y4yhe8h6h.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1n314cytqn9r3.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1ody4lxtt6ze8.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1or3dijypy7w9.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1p10fe1a9f857.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1qxs0m523lkbc.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1s7megtamek6r.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1sknsnbkyvie.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1xc25jm9e0l4b.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d1yhx4ygpfwmgm.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d21vn5eki5qsdi.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d21xx25clbv3i1.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d25lps4m0jar17.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d276kfco8k209c.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d284aawtm5vi48.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d28utijtz3xtdc.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2bbbc1corbwv1.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2bpmlqcx2tu90.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2d98ykcmmhgd4.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2dxg18pxtlgy0.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2e1asnsl7br7b.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2gkzqu5bqo3kk.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2hdqrshyzxswl.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2irko5f9gt1c5.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2mxb63djushzm.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2oxbdk5z4sczk.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2tf00ui4li17s.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2tuyivcrvbj81.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2v2e5kw14egus.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2w9q46ikgrcwx.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d2y67h7360vjl7.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d37i8mvsaxucfl.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d37lhv1m2qsipm.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d38d8jwr5u7ckx.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d38qg8yjhv3k33.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d39accvx65hq9o.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3a6p9masi26ag.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3b3ldcvgsu291.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3b6q2ou5kp8ke.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3bd0tgyk368z1.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3bsgqzbpkrvbb.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3ca4qxsdzlrju.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3dem8ae9kaqav.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3ejxpiq19cu3i.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3hqevbyoxtkoi.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3j50s1rkjmwi9.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3o593mz1glx8d.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3pnbvng3bx2nj.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3pxo1qcgzxtxs.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3qwwydnxv5vo9.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3ugbz7t7lf3ux.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d3vmpkkd3o2grv.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,d4whmvwm0rdvi.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d53csymoczzde.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d6ef3usc6d9cl.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d726x48n2pd5h.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,d9ssxzmclhfo4.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,daajvofu4yuzd.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dai.google.com,🎬 流媒
+  - DOMAIN-SUFFIX,db691j6te7mt4.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,db7hpmv1jrjri.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dbbg0ax8bgo7d.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dblg512iwb2z0.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dbrb49pjoymg4.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dh18i7whff86v.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dhjd4u7ds8bgi.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,did3h2ysc2rkk.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dki01q1l7yn3y.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dn7vkzd5khpp3.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dnf08l6u6uxnz.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,doumbtmvnsp0z.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,ds2c506obo7m8.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dt1s4l2cmiyit.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dtpafgv4jlncv.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dtqutq7lmcchv.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dvnftgdlbnemm.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dw2m7yrngfg8c.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dwamdstream102.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,dz734cj5diabs.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,dzz957bqk62e8.cloudfront.net,🎬 流媒
+  - DOMAIN-SUFFIX,ec613694ee5049d3b8f30913b619662e.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,english-livebkali.cgtn.com,🎬 流媒
+  - DOMAIN-SUFFIX,epg-ipv4.provider.plex.tv,🎬 流媒
+  - DOMAIN-SUFFIX,epg.ovh,🎬 流媒
+  - DOMAIN-SUFFIX,epgshare01.online,🎬 流媒
+  - DOMAIN-SUFFIX,fast-channels.sinclairstoryline.com,🎬 流媒
+  - DOMAIN-SUFFIX,ffef67628f584802af88ab884a963471.mediatailor.us-west-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,freqsyndlin.redbull.com,🎬 流媒
+  - DOMAIN-SUFFIX,ftv1.b-cdn.net,🎬 流媒
+  - DOMAIN-SUFFIX,garysclub.sharewithyou.dpdns.org,🎬 流媒
+  - DOMAIN-SUFFIX,github.com,🎬 流媒
+  - DOMAIN-SUFFIX,go4.pw,🎬 流媒
+  - DOMAIN-SUFFIX,gvqzylrx77.execute-api.ap-southeast-2.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,helpforum.sky.com,🎬 流媒
+  - DOMAIN-SUFFIX,hls-beacons-us.xumo.com,🎬 流媒
+  - DOMAIN-SUFFIX,hls.livecdn.io,🎬 流媒
+  - DOMAIN-SUFFIX,i.ibb.co,🎬 流媒
+  - DOMAIN-SUFFIX,i.imgur.com,🎬 流媒
+  - DOMAIN-SUFFIX,i.mjh.nz,🎬 流媒
+  - DOMAIN-SUFFIX,image-resizer-cloud-cdn.api.cms.amdvids.com,🎬 流媒
+  - DOMAIN-SUFFIX,images.contentstack.io,🎬 流媒
+  - DOMAIN-SUFFIX,images.pluto.tv,🎬 流媒
+  - DOMAIN-SUFFIX,images.prismic.io,🎬 流媒
+  - DOMAIN-SUFFIX,images.sr.roku.com,🎬 流媒
+  - DOMAIN-SUFFIX,innovationtv.eu,🎬 流媒
+  - DOMAIN-SUFFIX,ip.skk.moe,🎬 流媒
+  - DOMAIN-SUFFIX,iptv.watchhd.to,🎬 流媒
+  - DOMAIN-SUFFIX,iptvboss.xyz,🎬 流媒
+  - DOMAIN-SUFFIX,ist11.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,jmp2.uk,🎬 流媒
+  - DOMAIN-SUFFIX,kd112n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,kd123n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,kd145n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,kd211n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,kd233n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,kd277n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,kd387n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,keyserver.cloudport.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,latency-test.skk.moe,🎬 流媒
+  - DOMAIN-SUFFIX,lgcp-xumoent-nbcnn-2b7eb.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,lge-static.ottera.tv,🎬 流媒
+  - DOMAIN-SUFFIX,linear-1071.frequency.stream,🎬 流媒
+  - DOMAIN-SUFFIX,linear-1147.frequency.stream,🎬 流媒
+  - DOMAIN-SUFFIX,linear-1148.frequency.stream,🎬 流媒
+  - DOMAIN-SUFFIX,linear-1217.frequency.stream,🎬 流媒
+  - DOMAIN-SUFFIX,linear-796.frequency.stream,🎬 流媒
+  - DOMAIN-SUFFIX,linear-893.frequency.stream,🎬 流媒
+  - DOMAIN-SUFFIX,live-content-cf.xumo.com,🎬 流媒
+  - DOMAIN-SUFFIX,live20.bozztv.com,🎬 流媒
+  - DOMAIN-SUFFIX,livecan.blackhat.codes,🎬 流媒
+  - DOMAIN-SUFFIX,logo.m3uassets.com,🎬 流媒
+  - DOMAIN-SUFFIX,logos.mypanel.one,🎬 流媒
+  - DOMAIN-SUFFIX,logx.optimizely.com,🎬 流媒
+  - DOMAIN-SUFFIX,m.media-amazon.com,🎬 流媒
+  - DOMAIN-SUFFIX,mcdn-01.plutotv.net,🎬 流媒
+  - DOMAIN-SUFFIX,moviespheregold.com,🎬 流媒
+  - DOMAIN-SUFFIX,nerdsthatgeek.com,🎬 流媒
+  - DOMAIN-SUFFIX,news20e7hhcb.airspace-cdn.cbsivideo.com,🎬 流媒
+  - DOMAIN-SUFFIX,nl1.rocketdns.info,🎬 流媒
+  - DOMAIN-SUFFIX,nmx1ota.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,notifications-api.cf.sky.com,🎬 流媒
+  - DOMAIN-SUFFIX,ns.adobe.com,🎬 流媒
+  - DOMAIN-SUFFIX,outtvglobal.com,🎬 流媒
+  - DOMAIN-SUFFIX,pb-0ix3l1oxmg1fj.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-0n3n2ej0w8pl9.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-41uwb26l8gvwx.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-5itqeen09owrs.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-6csswagmy4nat.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-77gnnki2avwyv.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-7k9tqpp5wqdnj.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-88vnz5zd02b44.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-clwlfvkqpn19r.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-dqygo4og63axy.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-ehs1glsha1juy.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-fbdfahhani6sz.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-ft51qiiwihqtb.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-hum8cczphcrpf.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-iiczlgfysam0q.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-k9ze87giq7fqf.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-m89wlp8flmjzf.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-pskpwdav4v1e3.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-qyrvophnifz47.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-rlo4if9lnjthw.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-tc97nokxg85ph.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-tcsruiaw9dc0i.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-usmbvsgwcg8pc.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-wgi5ljoabjgdm.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-wmei1j77c66s0.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,pb-xp0ozx9lyqeiv.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,poolc6cg1ead.airspace-cdn.cbsivideo.com,🎬 流媒
+  - DOMAIN-SUFFIX,prod-s.cdn-cf.philo.com,🎬 流媒
+  - DOMAIN-SUFFIX,provider-static.plex.tv,🎬 流媒
+  - DOMAIN-SUFFIX,purl.org,🎬 流媒
+  - DOMAIN-SUFFIX,r123n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,raw.githubusercontent.com,🎬 流媒
+  - DOMAIN-SUFFIX,redfoxx.vip,🎬 流媒
+  - DOMAIN-SUFFIX,release-assets.githubusercontent.com,🎬 流媒
+  - DOMAIN-SUFFIX,rightsboosterltd-scl-1-us.xumo.wurl.tv,🎬 流媒
+  - DOMAIN-SUFFIX,royallivetv.club,🎬 流媒
+  - DOMAIN-SUFFIX,rt-glb.rttv.com,🎬 流媒
+  - DOMAIN-SUFFIX,s.rocketdns.info,🎬 流媒
+  - DOMAIN-SUFFIX,s10host1.localnow.api.cms.amdvids.com,🎬 流媒
+  - DOMAIN-SUFFIX,s11host2.localnow.api.cms.amdvids.com,🎬 流媒
+  - DOMAIN-SUFFIX,s12.gifyu.com,🎬 流媒
+  - DOMAIN-SUFFIX,s2host5.localnow.api.cms.amdvids.com,🎬 流媒
+  - DOMAIN-SUFFIX,s8host3.localnow.api.cms.amdvids.com,🎬 流媒
+  - DOMAIN-SUFFIX,s9.gifyu.com,🎬 流媒
+  - DOMAIN-SUFFIX,samsunguk-lightning-now80s-samsunguk-n908q.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com,🎬 流媒
+  - DOMAIN-SUFFIX,sk.delivery.roku.com,🎬 流媒
+  - DOMAIN-SUFFIX,skyaccessibility.sky,🎬 流媒
+  - DOMAIN-SUFFIX,skyport.sky.com,🎬 流媒
+  - DOMAIN-SUFFIX,slh.kop.homes,🎬 流媒
+  - DOMAIN-SUFFIX,sodipodi.sourceforge.net,🎬 流媒
+  - DOMAIN-SUFFIX,sourcepoint.mgr.consensu.org,🎬 流媒
+  - DOMAIN-SUFFIX,sports.cbsimg.net,🎬 流媒
+  - DOMAIN-SUFFIX,static.skyassets.com,🎬 流媒
+  - DOMAIN-SUFFIX,static.wikia.nocookie.net,🎬 流媒
+  - DOMAIN-SUFFIX,stitcher-ipv4.pluto.tv,🎬 流媒
+  - DOMAIN-SUFFIX,tlgrm.re,🎬 流媒
+  - DOMAIN-SUFFIX,tsb-mega.i9.ee,🎬 流媒
+  - DOMAIN-SUFFIX,turnerlive.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,turnerlive.warnermediacdn.com,🎬 流媒
+  - DOMAIN-SUFFIX,tv-trtworld.medya.trt.com.tr,🎬 流媒
+  - DOMAIN-SUFFIX,tvplus-cdn.www.funke.video,🎬 流媒
+  - DOMAIN-SUFFIX,tvpnlogopeu.samsungcloud.tv,🎬 流媒
+  - DOMAIN-SUFFIX,tvpnlogopus.samsungcloud.tv,🎬 流媒
+  - DOMAIN-SUFFIX,twcprod-live.twc-tv.com,🎬 流媒
+  - DOMAIN-SUFFIX,upload.wikimedia.org,🎬 流媒
+  - DOMAIN-SUFFIX,usatodaynews-samsungus-tsv2-ghkcu.amagi.tv,🎬 流媒
+  - DOMAIN-SUFFIX,vd23n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd254.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd257.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd34.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd34n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd45.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd67n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd78n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vd89n.proxy-cdn.ag,🎬 流媒
+  - DOMAIN-SUFFIX,vs-hls-push-ww-live.akamaized.net,🎬 流媒
+  - DOMAIN-SUFFIX,wurlgameshownetwork.global.transmit.live,🎬 流媒
+  - DOMAIN-SUFFIX,www.940media.org,🎬 流媒
+  - DOMAIN-SUFFIX,www.bell.ca,🎬 流媒
+  - DOMAIN-SUFFIX,www.directv.com,🎬 流媒
+  - DOMAIN-SUFFIX,www.inkscape.org,🎬 流媒
+  - DOMAIN-SUFFIX,www.nos.pt,🎬 流媒
+  - DOMAIN-SUFFIX,www.schema.org,🎬 流媒
+  - DOMAIN-SUFFIX,www.sky.com,🎬 流媒
+  - DOMAIN-SUFFIX,www.skygroup.sky,🎬 流媒
+  - DOMAIN-SUFFIX,www.starz.com,🎬 流媒
+  - DOMAIN-SUFFIX,www.vodafone.de,🎬 流媒
+  - DOMAIN-SUFFIX,www.w3.org,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-drct-skynews-nc91a.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-xumoent-ch824-d4q5c.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-xumoent-ch828-w6val.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-xumoent-ch834-iwtka.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-xumoent-ch839-d5ey0.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-xumoent-vc-105-z0vpm.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com,🎬 流媒
+  - DOMAIN-SUFFIX,xumo-xumoent-vc-122-sjv70.fast.nbcuni.com,🎬 流媒
+  - IP-CIDR,103.176.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,103.211.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,138.199.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,143.244.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,148.224.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,161.129.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,172.110.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,181.233.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,185.243.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,185.245.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,192.109.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,192.142.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,194.76.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,195.128.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,198.255.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,206.212.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,23.237.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,43.250.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,45.139.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,45.155.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,77.74.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,79.127.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,84.17.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,85.92.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,89.187.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,89.222.0.0/16,🎬 流媒,no-resolve
+  - IP-CIDR,89.36.0.0/15,🎬 流媒,no-resolve
+  - DOMAIN,play-edge.itunes.apple.com,📺 TV
+  - DOMAIN,linear.tv.apple.com,📺 TV
+  - DOMAIN-SUFFIX,akamaized.net,📺 TV
+  - DOMAIN-SUFFIX,pluto.tv,📺 TV
+  - DOMAIN-SUFFIX,cloudfront.net,📺 TV
+  - DOMAIN-SUFFIX,plex.tv,📺 TV
+  - DOMAIN-SUFFIX,amagi.tv,CTV
+  - DOMAIN-SUFFIX,jmp2.uk,CTV
+  - DOMAIN-SUFFIX,amazonaws.com,CTV
+  - DOMAIN-SUFFIX,epg.provider.plex.tv,CTV
+  - DOMAIN-SUFFIX,amdvids.com,CTV
+  - DOMAIN-SUFFIX,b-cdn.net,CTV
+  - DOMAIN-SUFFIX,bell.ca,CTV
+  - DOMAIN-SUFFIX,bozztv.com,CTV
+  - DOMAIN-SUFFIX,cbsimg.net,CTV
+  - DOMAIN-SUFFIX,cgtn.com,CTV
+  - DOMAIN-SUFFIX,cloudfront.net,CTV
+  - DOMAIN-SUFFIX,contentstack.io,CTV
+  - DOMAIN-SUFFIX,directv.com,CTV
+  - DOMAIN-SUFFIX,dpdns.org,CTV
+  - DOMAIN-SUFFIX,epg.pw,CTV
+  - DOMAIN-SUFFIX,fomo.re,CTV
+  - DOMAIN-SUFFIX,freebiesupply.com,CTV
+  - DOMAIN-SUFFIX,frequency.com,CTV
+  - DOMAIN-SUFFIX,futurecdn.net,CTV
+  - DOMAIN-SUFFIX,gifyu.com,CTV
+  - DOMAIN-SUFFIX,golfchannel.com,CTV
+  - DOMAIN-SUFFIX,i9.ee,CTV
+  - DOMAIN-SUFFIX,ibb.co,CTV
+  - DOMAIN-SUFFIX,imgur.com,CTV
+  - DOMAIN-SUFFIX,iptv-epg.org,CTV
+  - DOMAIN-SUFFIX,jsrdn.com,CTV
+  - DOMAIN-SUFFIX,kop.homes,CTV
+  - DOMAIN-SUFFIX,m3uassets.com,CTV
+  - DOMAIN-SUFFIX,media-amazon.com,CTV
+  - DOMAIN-SUFFIX,mjh.nz,CTV
+  - DOMAIN-SUFFIX,mypanel.one,CTV
+  - DOMAIN-SUFFIX,nbcuni.com,CTV
+  - DOMAIN-SUFFIX,nocookie.net,CTV
+  - DOMAIN-SUFFIX,nos.pt,CTV
+  - DOMAIN-SUFFIX,orange.fr,CTV
+  - DOMAIN-SUFFIX,ottera.tv,CTV
+  - DOMAIN-SUFFIX,philo.com,CTV
+  - DOMAIN-SUFFIX,prismic.io,CTV
+  - DOMAIN-SUFFIX,rocketfx.uk,CTV
+  - DOMAIN-SUFFIX,roku.com,CTV
+  - DOMAIN-SUFFIX,rttv.com,CTV
+  - DOMAIN-SUFFIX,run.app,CTV
+  - DOMAIN-SUFFIX,samsungcloud.tv,CTV
+  - DOMAIN-SUFFIX,sinclairstoryline.com,CTV
+  - DOMAIN-SUFFIX,sky.com,CTV
+  - DOMAIN-SUFFIX,starz.com,CTV
+  - DOMAIN-SUFFIX,transmit.live,CTV
+  - DOMAIN-SUFFIX,twc-tv.com,CTV
+  - DOMAIN-SUFFIX,vodafone.de,CTV
+  - DOMAIN-SUFFIX,warnermediacdn.com,CTV
+  - DOMAIN-SUFFIX,watchhd.to,CTV
+  - DOMAIN-SUFFIX,wikimedia.org,CTV
+  - DOMAIN-SUFFIX,yo-digital.com,CTV
+  - IP-CIDR,145.0.0.0/8,CTV,no-resolve
+  - IP-CIDR,185.217.168.164/32,CTV,no-resolve
+  - DOMAIN-SUFFIX,cdn3.indevs.in,CTV
+  - DOMAIN-SUFFIX,gpuserver3.tier1streams.com,CTV
+  - DOMAIN-SUFFIX,iptv.aibo.lol,CTV
+  - DOMAIN-SUFFIX,cdn.qd.je,CTV
+  - DOMAIN-SUFFIX,cdn6.cc.cd,CTV
+  - DOMAIN-SUFFIX,hidns.vip,CTV
+  - DOMAIN-SUFFIX,3a27f423.wurl.com,CTV
+  - IP-CIDR,40.160.24.53/16,CTV,no-resolve
+  - RULE-SET,TEST / Domain,Test
+  - RULE-SET,Block / Domain,Block  
+  - RULE-SET,ChatGPT / Domain,ChatGPT
+  - RULE-SET,Claude / Domain,Claude
+  - RULE-SET,Meta AI / Domain,Meta AI
+  - RULE-SET,Perplexity / Domain,Perplexity
+  - RULE-SET,Copilot / Domain,Copilot
+  - RULE-SET,Gemini / Domain,Gemini
+  - RULE-SET,Reddit / Domain,Reddit 
+  - RULE-SET,GitHub / Domain,GitHub
+  - RULE-SET,Telegram / Domain,Telegram
+  - RULE-SET,Telegram / IP,Telegram
+  - RULE-SET,WhatsApp / Domain,WhatsApp
+  - RULE-SET,Facebook / Domain,Facebook
+  - RULE-SET,Apple / Domain,Apple
+  - RULE-SET,Apple-CN / Domain,Apple  
+  - RULE-SET,Microsoft / Domain,Microsoft
+  - RULE-SET,OKX / Domain,Crypto
+  - RULE-SET,Bybit / Domain,Crypto
+  - RULE-SET,Binance / Domain,Crypto
+  - RULE-SET,Youtube / Domain,YouTube
+  - RULE-SET,TikTok / Domain,TikTok
+  - RULE-SET,Netflix / Domain,Netflix
+  - RULE-SET,Netflix / IP,Netflix,no-resolve
+  - RULE-SET,Disney / Domain,Disney
+  - RULE-SET,Amazon / Domain,Amazon
+  - RULE-SET,Crunchyroll / Domain,Crunchyroll
+  - RULE-SET,HBO / Domain,HBO
+  - RULE-SET,Spotify / Domain,Spotify
+  - RULE-SET,Steam / Domain,Steam
+  - RULE-SET,Epic / Domain,Games
+  - RULE-SET,EA / Domain,Games
+  - RULE-SET,Blizzard / Domain,Games
+  - RULE-SET,UBI / Domain,Games
+  - RULE-SET,PlayStation / Domain,Games
+  - RULE-SET,Nintend / Domain,Games
+  - RULE-SET,Google / Domain,Google
+  - RULE-SET,Google / IP,Google,no-resolve
+  - RULE-SET,Nvidia / Domain,Nvidia 
+  - RULE-SET,Proxy / Domain,国外
+  - RULE-SET,Globe / Domain,国外  
+  - RULE-SET,Direct / Domain,国内
+  - RULE-SET,China / Domain,国内
+  - RULE-SET,China / IP,国内,no-resolve
+  - RULE-SET,Private / Domain,国内
+  - MATCH,其他
+
+# ========================
+# 规则集提供者
+# ========================
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  class: &class {type: http, interval: 86400, behavior: classical, format: text}
+
+rule-providers:
+  TEST / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list"}
+  ChatGPT / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"}
+  Claude / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list"}
+  Meta AI / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/MetaAi.list"}
+  Perplexity / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/perplexity.mrs"}
+  Copilot / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Copilot.list"}
+  Gemini / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Gemini.list"}
+  GitHub / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"}
+  Telegram / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs"}  
+  Telegram / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs"}
+  Twitter / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/x.mrs"}
+  WhatsApp / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.list"}
+  Facebook / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs"}
+  Amazon / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/amazon.mrs"}
+  Apple-CN / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple-cn.mrs"}
+  Apple / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"} 
+  Microsoft / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs"}
+  OKX / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/okx.mrs"}
+  Bybit / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bybit.mrs"}
+  Binance / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/binance.mrs"}
+  TikTok / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs"}
+  Netflix / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs"}
+  Netflix / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs"}
+  Disney / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/disney.mrs"}
+  HBO / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hbo.mrs"}
+  Spotify / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs"}
+  Steam / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs"}
+  Epic / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.list"}
+  EA / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA.list"}
+  Blizzard / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list"}
+  UBI / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UBI/UBI.list"}
+  PlayStation / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PlayStation/PlayStation.list"}
+  Nintend / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list"}
+  Proxy / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list"}
+  Globe / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list"} 
+  Direct / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list"}
+  China / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs"}
+  China / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs"}
+  Private / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs"}
+  Block / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Block.list"}
+  Nvidia / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Nvidia/Nvidia.list"}
+  Crunchyroll / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Crunchyroll.list"}
+  Reddit / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/reddit.mrs"}
+  Youtube / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"}  
+  Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
+  Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
+# GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
+
+
+
