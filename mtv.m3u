@@ -165,8 +165,7 @@ https://xemzi.short.gy/1000015
 https://vs-cmaf-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/hevc_iptv_mse_v0.mpd
 #EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
 https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
-#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
-https://pb-iiczlgfysam0q.akamaized.net/v1/amcnetworks_bbcnews_1/samsungheadend_us/latest/main/hls/playlist.m3u8
+
 
 #EXTINF:-1 tvg-id="skynews" tvg-name="skynews" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1404.png" group-title="CA",skynews
 https://xemzi.short.gy/1000018
