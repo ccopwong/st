@@ -1,15 +1,14 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz,https://epg.yang-1989.eu.org/epg.xml.gz,http://epg.51zmt.top:8000/e.xml.gz"
 
-
 #EXTINF:-1 tvg-id="USBA3400003IP" tvg-name="Love Nature 4K" tvg-logo="https://garysclub.sharewithyou.dpdns.org/logos/Love_Nature.png" group-title="4K UHD",Love Nature 4K
 https://pb-ehs1glsha1juy.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ehs1glsha1juy/f2141f37-1f48-475b-ba54-b9efb62346db/0.m3u8
-
+#EXTINF:-1 tvg-id="Love.Nature.ca2" tvg-name="Love Nature 4K CA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Love_Nature_logo_%282025%29.svg/500px-Love_Nature_logo_%282025%29.svg.png" group-title="CA",Love Nature 4K CA
+http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/119322
 
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://jmp2.uk/stvp-DEBD800001S4
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="新闻资讯",CNN International
 https://ds2c506obo7m8.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/eff167d7-fa70-46a6-a123-3408de90641d/0.m3u8
-
 #EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-GBBD1900008O3
 #EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
@@ -21,7 +20,6 @@ https://jmp2.uk/stvp-DEBD19000012M
 #EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
 https://jmp2.uk/stvp-FRBD190001055
 
-
 #EXTINF:-1 tvg-id="ABC.News.Live.us2" tvg-name="ABC News Live" tvg-logo="https://d3bd0tgyk368z1.cloudfront.net/feeds/images/ABCNewsLive/abc_logo_new.png" group-title="新闻资讯",ABC News Live
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/59d7ff97-2217-4d3d-a0c9-7f7e6d8dae8e/5.m3u8
 #EXTINF:-1 tvg-id="99991635" tvg-name="LiveNOW from FOX" tvg-logo="https://images.foxtv.com/static.livenowfox.com/www.livenowfox.com/content/uploads/2023/01/0/100/LiveNOW-logo-1280x720.jpg?ve=1&tl=1" group-title="新闻资讯",LiveNOW from FOX
@@ -30,7 +28,6 @@ https://s11host2.localnow.api.cms.amdvids.com/v1/manifest/c189661feba961c19bc5fb
 https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/3.m3u8
 #EXTINF:-1 tvg-id="99951197" tvg-name="Reuters" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png" group-title="新闻资讯",Reuters
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/e7493ea5-5c1c-4d7a-a3f7-e95516048ad8/3.m3u8
-
 
 #EXTINF:-1 tvg-id="BBC.NEWS.HD.uk" tvg-name="BBC News UK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/330px-BBC_News_2022_%28Alt%29.svg.png" group-title="新闻资讯",BBC News UK
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
@@ -45,7 +42,59 @@ http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3
 #EXTINF:-1 group-title="新闻资讯" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/channelnewsasia.png",CNA News
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_3.m3u8
 
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="新闻资讯",无线新闻台
+https://iptv.aibo.lol/qd/wxxw.m3u8
+
+#EXTINF:-1 tvg-name="Now新聞台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/now1.png" group-title="新闻资讯",NOW新闻台
+https://iptv.aibo.lol/qd/now.m3u8
+
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="新闻资讯",凤凰资讯
+https://iptv.aibo.lol/qd/fhzx.m3u8
+
 #EXTINF:-1 tvg-id="99991247" tvg-name="NBC News NOW" tvg-logo="https://image-resizer-cloud-cdn.api.cms.amdvids.com/image/14F5D3B6-FA2C-4E41-91AD-CD037209D874/3-1x1.png" group-title="新闻资讯",NBC News NOW
 https://d4whmvwm0rdvi.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-linear/3e088b25-3e79-4f34-bbdf-afbcd40497f3/4.m3u8
 #EXTINF:-1 tvg-id="99951387" tvg-name="CNN Originals" tvg-logo="https://m.media-amazon.com/images/G/01/LCXO_Station_Logos/CNNOriginals_1920x1080_Logo._SL500_FMpng_.png" group-title="新闻资讯",CNN Originals
 https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/3836c9f5-9b7c-4254-90fd-4c8bcfca7f8f/3.m3u8
+
+
+
+#EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CA",CNN International
+https://jmp2.uk/stvp-GBBD8000016N
+
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="CA",CNN
+https://jmp2.uk/stvp-ESBD190000137
+
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="CA",CNN
+https://jmp2.uk/stvp-ITBD19000097D
+
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
+http://23.237.104.106:8080/USA_BBC_NEWS/index.m3u8
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
+https://xemzi.short.gy/1000015
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
+https://vs-cmaf-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/hevc_iptv_mse_v0.mpd
+#EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
+https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
+
+
+#EXTINF:-1 tvg-id="skynews" tvg-name="skynews" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1404.png" group-title="CA",skynews
+https://xemzi.short.gy/1000018
+
+#EXTINF:-1 tvg-id="FOXnews" tvg-name="FOXnews" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="CA",FOXnews
+http://40.160.24.56/FOX_NEWS_SD/index.m3u8
+
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Phoenix2.png" group-title="CA",凤凰资讯
+https://cdn.qd.je/163189/fhzx
+
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="CA",无线新闻台
+https://cdn.qd.je/163189/wxxw
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB4.png" group-title="CA",无线新闻台
+https://cdn.qd.je/163189/wxxwt
+
+#EXTINF:-1 tvg-name="Now新聞台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/now1.png" group-title="CA",NOW新闻台
+https://cdn.qd.je/163189/now
+
+#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="CA",HOY TV
+https://cdn.qd.je/163189/hoy
+#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gitee.com/rcwkj/tvlogo/raw/master/img/HOYTV.png" group-title="CA",HOY TV
+https://cdn.qd.je/163189/hoy2
