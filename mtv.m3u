@@ -151,10 +151,10 @@ http://89.187.179.148:826/TammyMccready/eGj6lFxVyG/119322
 #EXTINF:-1 tvg-id="CNN.International.us2" tvg-name="CNN International" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CA",CNN International
 https://jmp2.uk/stvp-GBBD8000016N
 
-#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="CA",CNN
 https://jmp2.uk/stvp-ESBD190000137
 
-#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="新闻资讯",CNN
+#EXTINF:-1 tvg-id="CNN.HD" tvg-name="CNN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CNN_Logo_%282014%29.svg/500px-CNN_Logo_%282014%29.svg.png" group-title="CA",CNN
 https://jmp2.uk/stvp-ITBD19000097D
 
 #EXTINF:-1 tvg-id="BBC.NEWS" tvg-name="BBC News" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/BBC1.png" group-title="CA",BBC News
