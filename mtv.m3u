@@ -128,18 +128,6 @@ http://88.212.15.19/live/mb_dance/index.m3u8
 #EXTINF:-1 group-title="CA" tvg-logo="https://musicboxhits.com/music_box_hits_logo.png",Music Box Hits
 http://88.212.15.19/live/mb_hits/index.m3u8
 
-#EXTINF:-1 group-title="CA" tvg-logo="https://images.pluto.tv/channels/5fd7b8bf927e090007685853/featuredImage.jpg",Vevo 80s
-https://amg00056-vevotv-vevo80saunz-samsungau-rp5e3.amagi.tv/playlist/amg00056-vevotv-vevo80saunz-samsungau/playlist.m3u8
-
-#EXTINF:-1 group-title="CA" tvg-logo="https://images.pluto.tv/channels/5fd7bb1f86d94a000796e2c2/featuredImage.jpg",Vevo 90s
-https://amg00056-vevotv-vevo90saunz-samsungau-n6a0d.amagi.tv/playlist/amg00056-vevotv-vevo90saunz-samsungau/playlist.m3u8
-
-#EXTINF:-1 group-title="CA" tvg-logo="https://images.pluto.tv/channels/5fd7bca3e0a4ee0007a38e8c/featuredImage.jpg",Vevo 2K
-https://d1s6jz7jeei17.cloudfront.net/playlist/amg00056-vevotv-vevo2kau-samsungau/playlist.m3u8
-
-#EXTINF:-1 group-title="CA" tvg-logo="https://i.imgur.com/dZHktKR.png",Vevo Pop
-https://d128y56w6v2kax.cloudfront.net/playlist/amg00056-vevotv-vevopopau-samsungau/playlist.m3u8
-
 #EXTINF:-1 tvg-name="翡翠台4K" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/TVB1.png" group-title="CA",翡翠台4K
 https://cdn.qd.je/163189/fct4k
 
